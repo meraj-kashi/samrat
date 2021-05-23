@@ -11,6 +11,7 @@ RUN set -eux; \
 
 COPY Caddyfile /etc/caddy/
 COPY index.html /usr/share/caddy/
+COPY xhr.js /usr/share/caddy/
 
 RUN set -eux; \
     wget -O /tmp/caddy.tar.gz "https://github.com/caddyserver/caddy/releases/download/v2.4.1/caddy_2.4.1_linux_amd64.tar.gz"; \
