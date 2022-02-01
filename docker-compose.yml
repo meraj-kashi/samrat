@@ -9,7 +9,7 @@ services:
       - "443:443"
     deploy:
       mode: replicated
-      replicas: 1
+      replicas: 2
   
   containerb:
     image: mypythonapp
